@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: pak-admin
+    runtime: node
+    rootDir: .
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: node ./server.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_USERNAME
+        value: han_jeu
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: PAK_DATA_DIR
+        value: /var/data/pak-command-center

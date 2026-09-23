@@ -1,0 +1,16 @@
+{
+  "name": "pak-admin-server",
+  "version": "1.7.0",
+  "private": true,
+  "description": "PAK account and activation-key management server with database-optional local storage",
+  "main": "server.js",
+  "scripts": { "start": "node ./server.js" },
+  "engines": { "node": ">=24 <25" },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.5",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
+}
